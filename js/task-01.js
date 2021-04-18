@@ -34,7 +34,37 @@ console.log(`В списке ${numOfEl} категории.`);
 // console.info(countElements (children));​ // 3
 
 // 2
-const titleEl = document.querySelectorAll('.item');
+
+    const titleEl = document.querySelectorAll('.item');
+ 
+
+ 
+// const text = titleEl[0].firstElementChild.textContent;
+// const num = titleEl[0].querySelectorAll('li')
+// console.log(text);
+// console.log(num.length);
+
+const title = element => {
+    console.log(`Категория: ${element.firstElementChild.textContent}`);
+}
+
+title([...titleEl].map);
+
+const countEl = titleEl[0].querySelectorAll('li');
+
+const countElements = item => {
+    console.log(`Количество элементов: ${countEl[0].length}`);
+}
+
+countElements([...countEl].map)
+
+       
+    
+
+
+
+
+
 
 
 
