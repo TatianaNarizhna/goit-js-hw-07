@@ -14,72 +14,15 @@
 Категория: Животные
 Количество элементов: 4*/ 
 
-// 1
-const categoriesEl = document.querySelector('ul#categories');
-const numOfEl = categoriesEl.children.length;
-console.log(`В списке ${numOfEl} категории.`);
-
-
-// var temp = document.getElementById('element').parentNode;
-// var children = temp.childNodes;
-// console.log(children.length); // 7
-
-// function countElements(children) {
-//   var count=0;
-//   for (var i=0, m=children.length; i<m; i++) 
-//      if (children[i].nodeType===document.ELEMENT_NODE) 
-//          count++;
-//   return count;
-// }
-// console.info(countElements (children));​ // 3
-
-// 2
-
-    const titleEl = document.querySelectorAll('.item');
- 
-
- 
-// const text = titleEl[0].firstElementChild.textContent;
-// const num = titleEl[0].querySelectorAll('li')
-// console.log(text);
-// console.log(num.length);
-
-const title = element => {
-    console.log(`Категория: ${element.firstElementChild.textContent}`);
-}
-
-title([...titleEl].map);
-
-const countEl = titleEl[0].querySelectorAll('li');
-
-const countElements = item => {
-    console.log(`Количество элементов: ${countEl[0].length}`);
-}
-
-countElements([...countEl].map)
-
-       
-    
 
 
 
+const categoriesEl = document.querySelectorAll('.item');
+console.log(`В списке ${categoriesEl.length} категории`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+categoriesEl.forEach(item => {
+    console.log('Категория:', item.querySelector('h2').textContent);
+    console.log('Количество элементов:', item.querySelector('ul').children.length);
+});
 
 

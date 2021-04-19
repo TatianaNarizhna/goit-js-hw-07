@@ -11,7 +11,7 @@ const ingredients = [
 const ingredientsEl = document.querySelector('ul#ingredients');
 
 
-const createListIngrediens = (ingredients) => {
+const createListIngrediens = ingredients => {
   return  ingredients.map(ingredient => {
           const itemEl = document.createElement('li');
           itemEl.textContent = ingredient;
@@ -39,18 +39,5 @@ console.log(items);
 // console.log(elements);
 
 // ingredientsEl.append(...elements);
-
-
-
-// const items = ingredients.map(ingredient => {
-//       const itemEl = document.createElement('li');
-//       itemEl.textContent = ingredient;
-
-//   return itemEl;
-// });
-
-// console.log(items);
-
-// ingredientsEl.append(...items);
 
 
