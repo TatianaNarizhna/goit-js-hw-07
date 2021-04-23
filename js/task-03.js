@@ -17,7 +17,7 @@ const images = [
   ];
 
 
-const imagesMarkup = ({url, alt}) => {
+const imagesMarkup = ({url, alt} = {}) => {
     return `
   <li>
     <img class="image" src="${url}" alt="${alt}">
