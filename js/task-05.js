@@ -1,4 +1,4 @@
-
+// Условие - или текст "незнакомец", или то, что вводит пользователь
 
 
 const refs = {
@@ -9,8 +9,12 @@ const refs = {
 refs.inputEl.addEventListener('input', onInputChange);
 
 function onInputChange (event) {
-    refs.spanEl.textContent = event.currentTarget.value;
 
+    if(refs.inputEl.value === '') {
+        refs.spanEl.textContent = 'незнакомец';
+    } else {
+        refs.spanEl.textContent = event.currentTarget.value;
+    }
 }
 
 
